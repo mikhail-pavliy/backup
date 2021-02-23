@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup every 5 minute
+
+[Timer]
+OnCalendar=*:0/5
+Unit=borg.service
+
+[Install]
+WantedBy=multi-user.target
